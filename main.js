@@ -3,7 +3,7 @@ console.log('Getting started');
 const button = document.querySelector('#searchButton'); 
 button.addEventListener('click', () => {
     const input = document.querySelector('#searchInput');
-    const countryUrl = `https://restcountries.com/v3.1/name/${input.value}`;
+    const countryUrl = `https://restcountries.com/v3.1/name/${input.value}?fullText=true`;
     console.log(input.value);
     console.log(countryUrl);
     fetch(countryUrl)
